@@ -256,6 +256,112 @@ transform:scale(1.05); transform:translateX(1.2);}
     .footer {
         padding: 30px 20px;
     }
+        .linkbox {
+        position: relative;
+        z-index: 3;
+        left: auto;
+        top: auto;
+        width: 90%;
+        min-height: 0;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .homeboxmain {
+        position: relative;
+        z-index: 2;
+        width: 90%;
+        right: auto;
+        top: auto;
+        margin: 0 auto;
+        padding: 30px 0;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .homebox,
+    .homebox2,
+    .contact {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .homebox button {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .nation,
+    .sold,
+    .enemies,
+    .garden,
+    .fantasy,
+    .education {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 70px 20px 30px;
+        font-size: 1.1rem;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+
+    .ponation,
+    .posold,
+    .poenemies,
+    .pogarden,
+    .pofantasy,
+    .poeducation {
+        position: relative;
+        right: auto;
+        top: auto;
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .ponation button,
+    .posold button,
+    .poenemies button,
+    .pogarden button,
+    .pofantasy button,
+    .poeducation button {
+        width: 100%;
+        height: auto;
+        margin: 8px 0;
+    }
+
+    .prose {
+        width: 100%;
+        padding: 30px 20px;
+        font-size: 1rem;
+        overflow-wrap: break-word;
+    }
+
+    .prose button {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .beautiful {
+        width: 100%;
+        padding: 25px 20px;
+        font-size: 1rem;
+        overflow-wrap: break-word;
+    }
+
+    .footer {
+        padding: 30px 20px;
+    }
 
 }
 
