@@ -4,6 +4,163 @@
 --link2: rgb(24, 58, 29);
 --prosebg: #FFFDF7;
 --prosetext:#282820;}
+@media (max-width: 600px) {
+
+    /* ---------- GENERAL ---------- */
+
+    body {
+        overflow-x: hidden;
+    }
+
+    button {
+        max-width: 100%;
+        font-size: 0.95rem;
+    }
+
+    /* ---------- HOME PAGE ---------- */
+
+    .homebg {
+        width: 100%;
+        height: 100vh;
+        min-height: 100vh;
+        object-fit: cover;
+        opacity: 0.35;
+    }
+
+    .homeboxmain {
+        position: relative;
+        width: 90%;
+        right: auto;
+        top: auto;
+        margin: 0 auto;
+        padding: 30px 0;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .homebox,
+    .homebox2 {
+        width: 100%;
+        height: fit-content;
+        padding: 20px;
+        margin-bottom: 0;
+    }
+
+    .homebox button {
+        width: 90%;
+        margin: 8px;
+    }
+
+    .contact {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* ---------- SIDEBAR / DETAILS ---------- */
+
+    .linkbox {
+        width: 85%;
+        left: 7.5%;
+        top: 0;
+    }
+
+    /* ---------- FORMS ---------- */
+
+    .form {
+        margin: 20px;
+        margin-bottom: 60px;
+    }
+
+    .form input,
+    .form textarea,
+    .textarea {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .textarea {
+        min-height: 200px;
+        max-height: none;
+        height: 200px;
+    }
+
+    .button2 {
+        width: 100%;
+    }
+
+    /* ---------- POEM PAGES ---------- */
+
+    .nation,
+    .sold,
+    .enemies,
+    .garden,
+    .fantasy,
+    .education {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 70px 25px 30px;
+        font-size: 1.2rem;
+        box-sizing: border-box;
+    }
+
+    .ponation,
+    .posold,
+    .poenemies,
+    .pogarden,
+    .pofantasy,
+    .poeducation {
+        position: relative;
+        right: auto;
+        top: auto;
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .ponation button,
+    .posold button,
+    .poenemies button,
+    .pogarden button,
+    .pofantasy button,
+    .poeducation button {
+        width: 100%;
+        height: auto;
+        margin: 8px 0;
+    }
+
+    /* ---------- PROSE ---------- */
+
+    .prose {
+        padding: 30px 20px;
+        font-size: 1rem;
+    }
+
+    .prose button {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .beautiful {
+        padding: 25px 20px;
+        font-size: 1rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    .footer {
+        padding: 30px 20px;
+    }
+
+}
 
 @media (prefers-color-scheme: dark) {:root{
     --text: rgb(243, 220, 170);
