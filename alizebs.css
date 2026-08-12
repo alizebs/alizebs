@@ -4,6 +4,103 @@
 --link2: rgb(24, 58, 29);
 --prosebg: #FFFDF7;
 --prosetext:#282820;}
+
+@media (prefers-color-scheme: dark) {:root{
+    --text: rgb(243, 220, 170);
+    --bg: rgb(4, 32, 8);
+    --link: rgb(24, 58, 29);
+    --link2: rgb(252, 253, 252);
+    --prosebg:  #121412;
+    --prosetext: #E6E1D5;
+}}
+@font-face {
+    font-family: "Allura";
+    src: url("fonts/Allura/Allura-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "bm";
+    src: url("fonts/BodoniModa/BodoniModa.ttf") format("ttf");
+}
+.body,.ask{color: var(--text); background-color: var(--bg); font-family:"bm";}
+button{background-color: transparent; border: 10px solid var(--text); border-radius: 5px; padding: 5px;
+ color: var(--text); font-family:"bm";} 
+a{text-decoration: underline; cursor: pointer;}
+.linkbox{display: flex; flex-direction: column; gap: 10px; height: fit-content; min-height: 100%;
+    details{color: var(--bg)} position: absolute; left: 7.5%; top:0; width: 30%; background-color: var(--text); color: var(--bg); border: 5px solid transparent; 
+    border-image: url("images/home.png") 2vh round; padding-top: 20px; text-align: left; z-index: 1;}
+.linkbox a{color: var(--bg);}
+.linkbox a:hover{color: var(--link);}
+.linkbox details{cursor:pointer;}
+.linkbox details:hover{color: var(--link);}
+.linkbox ul{list-style-type: disc;}
+.contact{ font-family: "bm"; background-color: transparent; width:100%; margin-bottom: 10%;
+border: 5px solid var(--text); padding: 30px; text-align: center; a{color: var(--text); text-decoration: underline; gap: 10px;}
+ text-align: left; border-radius: 10px; box-shadow: 0px 2px 10px gray; transition: all 0.3s ease-in-out;}
+ .contact a:hover{color: var(--link);}
+ .contact ul{list-style-type: none;}
+ .button{font-family:cursive; background-color: transparent; border: 7.5px solid var(--text); border-radius: 10px; padding: 5px;
+ color: var(--text); text-align: center; text-decoration: none; width: 100%; transition: all 0.3s ease-in-out; cursor: pointer;}
+ .button:hover{color: var(--link2); border-color: var(--link2);
+transform:scale(1.05); transform:translateX(1.2);} 
+ .button:active{transform:scale(0.8);}
+ .homebg{width: 40%; min-height:100vh; object-fit: cover; position:fixed; top: 0; left: 0; z-index: 0;}
+ .homebox{font-family: "bm"; height: 20vh; background-color: transparent; border: 5px solid var(--text); padding: 40x; border-radius: 5px; width: 100%;
+    text-align: center; a{color: var(--text); text-decoration: underline; gap: 10px;} margin-bottom: 5%;}
+ .homebox2{font-family: "bm"; height: fit-content; background-color: transparent; border: 5px solid var(--text); padding: 10px; width: 100%;
+    text-align: center; a{color: var(--text); text-decoration: underline; gap: 10px; border-radius: 5px;} margin-bottom: 5%;}
+ .homeboxmain{a{color: var(--text);} a:hover{color: var(--link);} width: 20%; position: fixed; right: 5%; top: 0%; display: flex; flex-direction: column; align-items: right; padding: 100px; gap:5%; button{margin: 3%;} ul{list-style: none;}}
+
+
+/* forms */
+.form textarea, .form input{font-family: "bm"; background-color:transparent; border: 3px solid var(--text); color:var(--text); border-radius: 7px; padding: 7px;}
+ .form{display: flex; flex-direction: column; align-items: flex-start; margin: 40px; margin-bottom: 100px; }
+.textarea{resize:none; max-height: 100vh; min-height:20vh; width: 60vh;}
+.form input{min-width:100px;}
+.form ::placeholder{color:var(--link);}
+.button2{font-family:cursive; background-color: transparent; border: 7.5px solid var(--text); border-radius: 10px; padding: 5px;
+ color: var(--text); text-align: center; text-decoration: none; width: 30%; transition: all 0.3s ease-in-out; cursor: pointer;}
+ .button2:hover{color: var(--link2); border-color: var(--link2);
+transform:scale(1.05); transform:translateX(1.2);} 
+ .button2:active{transform:scale(0.8);}
+ .heading{color:var(--bg); background-color: var(--text); border:10px solid var(--link2); text-align: center; padding: 20px;}
+.footer{padding:5vh; color: var(--bg); background-color: var(--text); a{color: var(--bg); text-align: justify; text-decoration: double;}}
+
+
+
+
+
+
+
+
+
+
+ /* poem pages */
+ 
+ .nation,.sold,.enemies,.garden,.fantasy,.education{padding: 30px; font-size: 1.5rem; font-family: ""; position: fixed; left: 5%; top:0%; width: 50%; height: 100%; text-align: justify; cursor: none; color: rgb(243, 220, 170); display: flex; flex-direction: column; padding-top:100px;}
+.ponation,.posold,.poenemies,.pogarden,.pofantasy,.poeducation{padding: 20px; position: fixed; right: 0%; top: 0%; width: 30%; height: 100%; display: flex; flex-direction: column; 
+    button{margin: 10px; width: 90%; height: 10%; font-family: "bm"; background-color:rgb(243, 220, 170); border-radius: 10px; 
+        padding: 5px; text-align: center; text-decoration: none; transition: all 0.3s ease-in-out; cursor: pointer;}
+    button:hover{color:rgb(243, 220, 170); border: 10px solid rgb(243, 220, 170); transform:scale(1.05); background-color: transparent;}}
+    details{cursor:pointer; font-family: "bm"; color:rgb(243, 220, 170);}
+.nation{background-color: #360f0f; }
+.ponation{background-color: #5e2828; button{color: #360f0f; border: 10px solid #360f0f;}}
+.sold{background-color: #030d20; font-family: "bm",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(243, 220, 170);}
+.posold{background-color: #0a1e3c; button{color:#030d20; border: 10px solid #030d20;}}
+.enemies{background-color:#360f0f;}
+.poenemies{background-color: #5e2828; button{color: #360f0f; border: 10px solid #360f0f;}}
+.garden{background-color:#240319; font-family:"Allura";}
+.pogarden{background-color: #18011b; button{color: #240319; border: 10px solid #240319;}}
+.fantasy{background-color:#520a0a; font-family:Allura; position:absolute; height:fit-content;}
+.pofantasy{background-color: #0f0101; button{color: #520a0a  ; border: 10px solid #520a0a;}}
+.education{width: fit-content; height: fit-content; position: absolute; background-color:#011a03; font-family: "bm"'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(243, 220, 170);}
+.poeducation{background-color: #22552a; button{color: #011a03; border: 10px solid #011a03;}}
+.sign{font-family:"bm",Verdana, Geneva, Tahoma, sans-serif; font-size: medium; font-weight: lighter;text-align: end;}
+
+/*prose pages*/
+.prose{font-family: "bm"; text-align: justify; padding-left: 5%; padding-right: 5%; padding-top:5%; background-color: var(--prosebg); color: var(--prosetext); button{width:20%; margin:1%;}}
+.beautiful{font-family: "bm"; display: flex; flex-direction: column; align-items: center; text-align: justify; padding: 40px; background-color: rgb(66, 9, 1); color:wheat; a{color: wheat;} a:hover{color:white;}}
+.prose hr{margin:3%; border: none; border-top: 2px dotted var(--prosetext);}
+
 @media (max-width: 600px) {
 
     /* ---------- GENERAL ---------- */
@@ -162,98 +259,3 @@
 
 }
 
-@media (prefers-color-scheme: dark) {:root{
-    --text: rgb(243, 220, 170);
-    --bg: rgb(4, 32, 8);
-    --link: rgb(24, 58, 29);
-    --link2: rgb(252, 253, 252);
-    --prosebg:  #121412;
-    --prosetext: #E6E1D5;
-}}
-@font-face {
-    font-family: "Allura";
-    src: url("fonts/Allura/Allura-Regular.woff2") format("woff2");
-}
-@font-face {
-    font-family: "bm";
-    src: url("fonts/BodoniModa/BodoniModa.ttf") format("ttf");
-}
-.body,.ask{color: var(--text); background-color: var(--bg); font-family:"bm";}
-button{background-color: transparent; border: 10px solid var(--text); border-radius: 5px; padding: 5px;
- color: var(--text); font-family:"bm";} 
-a{text-decoration: underline; cursor: pointer;}
-.linkbox{display: flex; flex-direction: column; gap: 10px; height: fit-content; min-height: 100%;
-    details{color: var(--bg)} position: absolute; left: 7.5%; top:0; width: 30%; background-color: var(--text); color: var(--bg); border: 5px solid transparent; 
-    border-image: url("images/home.png") 2vh round; padding-top: 20px; text-align: left; z-index: 1;}
-.linkbox a{color: var(--bg);}
-.linkbox a:hover{color: var(--link);}
-.linkbox details{cursor:pointer;}
-.linkbox details:hover{color: var(--link);}
-.linkbox ul{list-style-type: disc;}
-.contact{ font-family: "bm"; background-color: transparent; width:100%; margin-bottom: 10%;
-border: 5px solid var(--text); padding: 30px; text-align: center; a{color: var(--text); text-decoration: underline; gap: 10px;}
- text-align: left; border-radius: 10px; box-shadow: 0px 2px 10px gray; transition: all 0.3s ease-in-out;}
- .contact a:hover{color: var(--link);}
- .contact ul{list-style-type: none;}
- .button{font-family:cursive; background-color: transparent; border: 7.5px solid var(--text); border-radius: 10px; padding: 5px;
- color: var(--text); text-align: center; text-decoration: none; width: 100%; transition: all 0.3s ease-in-out; cursor: pointer;}
- .button:hover{color: var(--link2); border-color: var(--link2);
-transform:scale(1.05); transform:translateX(1.2);} 
- .button:active{transform:scale(0.8);}
- .homebg{width: 40%; min-height:100vh; object-fit: cover; position:fixed; top: 0; left: 0; z-index: 0;}
- .homebox{font-family: "bm"; height: 20vh; background-color: transparent; border: 5px solid var(--text); padding: 40x; border-radius: 5px; width: 100%;
-    text-align: center; a{color: var(--text); text-decoration: underline; gap: 10px;} margin-bottom: 5%;}
- .homebox2{font-family: "bm"; height: fit-content; background-color: transparent; border: 5px solid var(--text); padding: 10px; width: 100%;
-    text-align: center; a{color: var(--text); text-decoration: underline; gap: 10px; border-radius: 5px;} margin-bottom: 5%;}
- .homeboxmain{a{color: var(--text);} a:hover{color: var(--link);} width: 20%; position: fixed; right: 5%; top: 0%; display: flex; flex-direction: column; align-items: right; padding: 100px; gap:5%; button{margin: 3%;} ul{list-style: none;}}
-
-
-/* forms */
-.form textarea, .form input{font-family: "bm"; background-color:transparent; border: 3px solid var(--text); color:var(--text); border-radius: 7px; padding: 7px;}
- .form{display: flex; flex-direction: column; align-items: flex-start; margin: 40px; margin-bottom: 100px; }
-.textarea{resize:none; max-height: 100vh; min-height:20vh; width: 60vh;}
-.form input{min-width:100px;}
-.form ::placeholder{color:var(--link);}
-.button2{font-family:cursive; background-color: transparent; border: 7.5px solid var(--text); border-radius: 10px; padding: 5px;
- color: var(--text); text-align: center; text-decoration: none; width: 30%; transition: all 0.3s ease-in-out; cursor: pointer;}
- .button2:hover{color: var(--link2); border-color: var(--link2);
-transform:scale(1.05); transform:translateX(1.2);} 
- .button2:active{transform:scale(0.8);}
- .heading{color:var(--bg); background-color: var(--text); border:10px solid var(--link2); text-align: center; padding: 20px;}
-.footer{padding:5vh; color: var(--bg); background-color: var(--text); a{color: var(--bg); text-align: justify; text-decoration: double;}}
-
-
-
-
-
-
-
-
-
-
- /* poem pages */
- 
- .nation,.sold,.enemies,.garden,.fantasy,.education{padding: 30px; font-size: 1.5rem; font-family: ""; position: fixed; left: 5%; top:0%; width: 50%; height: 100%; text-align: justify; cursor: none; color: rgb(243, 220, 170); display: flex; flex-direction: column; padding-top:100px;}
-.ponation,.posold,.poenemies,.pogarden,.pofantasy,.poeducation{padding: 20px; position: fixed; right: 0%; top: 0%; width: 30%; height: 100%; display: flex; flex-direction: column; 
-    button{margin: 10px; width: 90%; height: 10%; font-family: "bm"; background-color:rgb(243, 220, 170); border-radius: 10px; 
-        padding: 5px; text-align: center; text-decoration: none; transition: all 0.3s ease-in-out; cursor: pointer;}
-    button:hover{color:rgb(243, 220, 170); border: 10px solid rgb(243, 220, 170); transform:scale(1.05); background-color: transparent;}}
-    details{cursor:pointer; font-family: "bm"; color:rgb(243, 220, 170);}
-.nation{background-color: #360f0f; }
-.ponation{background-color: #5e2828; button{color: #360f0f; border: 10px solid #360f0f;}}
-.sold{background-color: #030d20; font-family: "bm",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(243, 220, 170);}
-.posold{background-color: #0a1e3c; button{color:#030d20; border: 10px solid #030d20;}}
-.enemies{background-color:#360f0f;}
-.poenemies{background-color: #5e2828; button{color: #360f0f; border: 10px solid #360f0f;}}
-.garden{background-color:#240319; font-family:"Allura";}
-.pogarden{background-color: #18011b; button{color: #240319; border: 10px solid #240319;}}
-.fantasy{background-color:#520a0a; font-family:Allura; position:absolute; height:fit-content;}
-.pofantasy{background-color: #0f0101; button{color: #520a0a  ; border: 10px solid #520a0a;}}
-.education{width: fit-content; height: fit-content; position: absolute; background-color:#011a03; font-family: "bm"'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(243, 220, 170);}
-.poeducation{background-color: #22552a; button{color: #011a03; border: 10px solid #011a03;}}
-.sign{font-family:"bm",Verdana, Geneva, Tahoma, sans-serif; font-size: medium; font-weight: lighter;text-align: end;}
-
-/*prose pages*/
-.prose{font-family: "bm"; text-align: justify; padding-left: 5%; padding-right: 5%; padding-top:5%; background-color: var(--prosebg); color: var(--prosetext); button{width:20%; margin:1%;}}
-.beautiful{font-family: "bm"; display: flex; flex-direction: column; align-items: center; text-align: justify; padding: 40px; background-color: rgb(66, 9, 1); color:wheat; a{color: wheat;} a:hover{color:white;}}
-.prose hr{margin:3%; border: none; border-top: 2px dotted var(--prosetext);}
