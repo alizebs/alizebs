@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ask</title>
+    <link rel="stylesheet" href="alizebs.css">
+</head>
+<body class="body">
+    <div class="heading"><h1>Ask me anything</h1></div>
+    <form class="form" action="https://formsubmit.co/alizebsid@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="enter name; real or made up"
+         required maxlength="20"><br>
+         <label for="title">Which poem/story/article are you asking about?</label>
+        <input type="text" id="title" name="reference" placeholder="enter the title" required title="enter 'general' if your question isn't referenced"><br>
+        <label for="question">What would you like to ask?</label>
+        <textarea class="textarea" id="question" required title="ask something" minlength="10" placeholder="ask me anything about the poem, story, or article that you don't understand, want to dive deeper about, want to know the inspiration or original idea, or want to know about its upcoming part or chapter"></textarea><br>
+        <label for="email">Email addres for reply:</label>
+        <input type="email" name="email" id="email" placeholder="name@website.com" required><br>
+        <label for="insta">Instagram id (optional):</label>
+        <input type="text" id="insta" placeholder="@name" pattern="@[\w.]+" title="please enter valid id starting with @ (or leave empty)"><br><br><br>
+        <button class="button2" type="submit">Send</button>
+    </form>
+    <div class="footer"> <hr><a href="index.html">Back to Home</a> </div>
+</body>
+</html>

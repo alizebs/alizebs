@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>review</title>
+    <link rel="stylesheet" href="alizebs.css">
+</head>
+<body class="body">
+    <div class="heading"><h1>Review</h1></div>
+    <form class="form" action="https://formsubmit.co/alizebsid@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="">
+        
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="enter name; real or made up"
+         required maxlength="20"><br>
+         <label for="title">Enter title of poem/story/article:</label>
+        <input type="text" id="title" name="reference" placeholder="enter the title" required title="enter 'general' if your question isn't referenced"><br>
+        <label for="rating">Rate on a scale of 1 to 10</label>
+        <input type="number" title="rate between 1 to 10" min="1" max="10" id="rating" name="rating" placeholder="rate"><br>
+        <label for="question">Write your review</label>
+        <textarea class="textarea" id="question" required title="write something" minlength="10" placeholder="share your interpretation, thoughts or opinion, or describe what you liked and did not like about the poetry or prose, would you recommend this to others: why or why not?"></textarea><br>
+        <label for="insta">Instagram id (optional):</label>
+        <input type="text" id="insta" placeholder="@name" pattern="@[\w.]+" title="please enter valid id starting with @ (or leave empty)"><br><br><br>
+        <button class="button2" type="submit">Send</button>
+    </form>
+    <div class="footer"> <hr><a href="index.html">Back to Home</a> </div>
+</body>
+</html>
